@@ -1,4 +1,4 @@
-# Zebra finch HVC — single-neuron song-response exercise
+# Female zebra finch HVC — single-neuron song-response exercise
 
 A small, self-contained Python data-analysis exercise. Starting from real recordings, reproduce the
 target figure: how one neuron responds when a female zebra finch hears an unfamiliar male's song.
@@ -113,4 +113,5 @@ instead of the 'source' line.
 ## License
 
 Licensed under **CC BY 4.0** — free to use and adapt with attribution. See ['LICENSE'](LICENSE).
-Suggested credit: *Savoy, A. (2026). HVC single-neuron song-response teaching example. CC BY 4.0.*
+Suggested credit: *Savoy, A. (2026). Female zebra finch HVC single-neuron song-response
+teaching example. CC BY 4.0.*
