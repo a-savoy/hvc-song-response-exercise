@@ -37,10 +37,10 @@ Colab already has 'numpy', 'pandas', 'matplotlib', and 'scipy' — no 'pip insta
 
 Write Python that reads the two files in 'data/' and reproduces 'target_figure.png' — four stacked panels:
 
-**Spectrogram** showing the two song presentations
-**Oscillogram** showing the song waveform, colored by the neuron's firing rate
-**PSTH** with firing rate in 100 ms bins
-**Raster** with one row per trial (20 trials)
+- **Spectrogram** showing the two song presentations
+- **Oscillogram** showing the song waveform, colored by the neuron's firing rate
+- **PSTH** with firing rate in 100 ms bins
+- **Raster** with one row per trial (20 trials)
 
 The x-axis is a 15 s display: '3 s pre + 3 s song A + 3 s gap + 3 s song B + 3 s post'.
 
