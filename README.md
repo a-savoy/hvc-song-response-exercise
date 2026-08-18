@@ -64,9 +64,6 @@ made a real attempt yourself.
 | 'unfamiliar_spikes.csv' | CSV: 'trial, spike_time_s' | one row per spike; 'spike_time_s' is already on the 0–15 s display axis. Every trial 0–19 appears; a trial with no spikes carries a single 'NaN' row so the trial count is preserved |
 | 'unfamiliar_song.wav' | 44.1 kHz WAV | the unfamiliar song (played twice per trial; laid into both song windows) |
 
-One fixed detail: the firing-rate color scale is pinned ('FR_MIN_GLOBAL=0.0', 'FR_MAX_GLOBAL=59.5') so
-this panel's colors match the original multi-song figure exactly; set both to 'None' to auto-scale.
-
 ## Running locally instead
 
 If you would rather work on your own machine than in Colab, clone the repository, then run these
