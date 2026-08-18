@@ -1,11 +1,8 @@
 # Female zebra finch HVC — single-neuron song-response exercise
 
 A small, self-contained Python data-analysis exercise. Starting from real recordings, reproduce the
-target figure: how one neuron responds when a female zebra finch hears an unfamiliar male's song.
-
-## Design
-One neuron in the HVC (a song-related brain area) of a female zebra finch, responding to an
-unfamiliar male's song. Each trial plays the same 3 s song twice (a "tandem pair": song, gap, song).
+target figure: a PSTH plot showing spikes from one neuron in female zebra finch HVC (a song-related brain area), 
+responding to an unfamiliar male's song. Each trial plays the same 3 s song twice (a "tandem pair": song, gap, song).
 
 ## Setup — Google Colab
 
@@ -40,49 +37,24 @@ Colab already has 'numpy', 'pandas', 'matplotlib', and 'scipy' — no 'pip insta
 
 Write Python that reads the two files in 'data/' and reproduces 'target_figure.png' — four stacked panels:
 
-1. **Spectrogram** of the two song presentations
-2. **Oscillogram** — the song waveform, colored by the neuron's firing rate
-3. **PSTH** — firing rate in 100 ms bins
-4. **Raster** — one row per trial (20 trials)
+**Spectrogram** showing the two song presentations
+**Oscillogram** showing the song waveform, colored by the neuron's firing rate
+**PSTH** with firing rate in 100 ms bins
+**Raster** with one row per trial (20 trials)
 
 The x-axis is a 15 s display: '3 s pre + 3 s song A + 3 s gap + 3 s song B + 3 s post'.
 
 ### Steps
-- **1.** Read the CSV into per-trial spike-time arrays (group by 'trial').
-- **2.** Bin all spikes into 100 ms bins, divide by (bin width × n_trials) → firing rate (PSTH).
-- **3.** Read the WAV; draw the spectrogram and firing-rate-colored waveform (song at 3–6 s and 9–12 s).
-- **4.** Draw the PSTH bars and the raster; save.
-
-Build it up one panel at a time. Get the raster drawing before you worry about the spectrogram — it's
-the simplest panel and it tells you immediately whether you read the data correctly.
-
-## Using an AI assistant
-
-You may use any LLM you like (ChatGPT, Claude, Gemini, …), or the AI assistant built into Colab.
-Things that tend to work well:
-
-- **Describe the data before asking for code.** For example: "I have a CSV with columns 'trial' and
-  'spike_time_s', one row per spike, 20 trials, spike times from 0 to 15 seconds."
-- **Paste error messages in full.** The traceback is the single most useful thing you can hand it.
-- **Ask it to explain what it wrote,** line by line, until you could reproduce the code yourself.
-- **Work one panel at a time** instead of asking for the whole figure in one shot.
-
-The point is to end up understanding the figure, not just to produce it. An LLM will happily write
-code that runs and plots the wrong thing, so check every panel against 'target_figure.png' yourself
-rather than trusting that it worked.
+1. Read the CSV into per-trial spike-time arrays (group by 'trial').
+2. Bin all spikes into 100 ms bins, divide by (bin width × n_trials) → firing rate (PSTH).
+3. Read the WAV; draw the spectrogram and firing-rate-colored waveform (song at 3–6 s and 9–12 s).
+4. Draw the PSTH bars and the raster; save.
 
 ## Checking your work
 
-Compare what you make against 'target_figure.png', one panel at a time:
-
-- Do the two song windows sit at 3–6 s and 9–12 s?
-- Does the raster have 20 rows, one per trial?
-- Does the PSTH peak where the raster looks densest?
-- Is the whole x-axis 0 to 15 s?
-
 'reference_solution.ipynb' in this repository is a complete worked solution, broken into
 explained steps. Do not open it first. Start with the data, the target figure, your own blank
-notebook, and your LLM — then open the solution to see how I built the figure, once you have
+notebook, and your LLM, then open the solution to see how I built the figure, once you have
 made a real attempt yourself.
 
 ## The data ('data/')
