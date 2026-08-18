@@ -1,8 +1,8 @@
 # Female zebra finch HVC — single-neuron song-response exercise
 
 A small, self-contained Python data-analysis exercise. Starting from real recordings, reproduce the
-target figure: a PSTH plot showing spikes from one neuron in female zebra finch HVC (a song-related brain area), 
-responding to an unfamiliar male's song. Each trial plays the same 3 s song twice (a "tandem pair": song, gap, song).
+target figure, which shows spiking from one neuron in female zebra finch HVC (a song-related brain area), 
+in response to an unfamiliar male's song. Each trial plays the same 3 s song twice (a "tandem pair": song, gap, song).
 
 ## Setup — Google Colab
 
