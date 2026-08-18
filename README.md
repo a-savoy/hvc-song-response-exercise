@@ -33,9 +33,6 @@ That copies this repository into your Colab session and moves you into it, so th
 
 Colab already has 'numpy', 'pandas', 'matplotlib', and 'scipy' — no 'pip install' needed.
 
-(If you open 'reference_solution.ipynb' in Colab instead of starting a blank notebook, you can
-skip this — that notebook downloads the data itself.)
-
 > Your Colab session is temporary. If it disconnects, or you come back the next day, re-run
 > those two lines before you continue. Anything you want to keep, save to your Drive or download.
 
@@ -70,20 +67,23 @@ Things that tend to work well:
 - **Ask it to explain what it wrote,** line by line, until you could reproduce the code yourself.
 - **Work one panel at a time** instead of asking for the whole figure in one shot.
 
-Note that this repository contains the answer — 'reference_solution.ipynb' is a complete worked
-solution. So if you paste the whole repo into an LLM, it will simply hand the finished figure back
-to you. Try each panel yourself first, and use the solution to check your work rather than to start
-it. The point is to end up understanding the figure, not just to possess it.
+The point is to end up understanding the figure, not just to produce it. An LLM will happily write
+code that runs and plots the wrong thing, so check every panel against 'target_figure.png' yourself
+rather than trusting that it worked.
 
 ## Checking your work
 
-'reference_solution.ipynb' is a notebook, broken into explained steps
+Compare what you make against 'target_figure.png', one panel at a time:
 
-https://colab.research.google.com/github/a-savoy/hvc-song-response-exercise/blob/main/reference_solution.ipynb
+- Do the two song windows sit at 3–6 s and 9–12 s?
+- Does the raster have 20 rows, one per trial?
+- Does the PSTH peak where the raster looks densest?
+- Is the whole x-axis 0 to 15 s?
 
-Open the notebook directly in Colab. Its first cell downloads the data for you,
-so it works on a completely fresh session — you don't need to have done anything above. Then choose
-*Runtime → Run all*.
+'reference_solution.ipynb' in this repository is a complete worked solution, broken into
+explained steps. Do not open it first. Start with the data, the target figure, your own blank
+notebook, and your LLM — then open the solution to see how I built the figure, once you have
+made a real attempt yourself.
 
 ## The data ('data/')
 
@@ -103,7 +103,7 @@ from inside the repository folder:
     python3 -m venv .venv
     source .venv/bin/activate
     pip install -r requirements.txt notebook
-    jupyter notebook reference_solution.ipynb
+    jupyter notebook
 
 The first two lines create and switch into a virtual environment. They matter: on macOS and most
 Linux systems the interpreter is 'python3' rather than 'python', and there is no bare 'pip' command
