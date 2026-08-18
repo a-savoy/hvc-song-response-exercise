@@ -1,10 +1,10 @@
-# Female zebra finch HVC — single-neuron song-response exercise
+# Female zebra finch HVC single-neuron song-response exercise
 
 A small, self-contained Python data-analysis exercise. Starting from real recordings, reproduce the
 target figure, which shows spiking from one neuron in female zebra finch HVC (a song-related brain area), 
 in response to an unfamiliar male's song. Each trial plays the same 3 s song twice (a "tandem pair": song, gap, song).
 
-## Setup — Google Colab
+## Setup Google Colab
 
 You'll do all of this in a Colab notebook. There is nothing to install on your own computer.
 
@@ -15,7 +15,7 @@ You'll do all of this in a Colab notebook. There is nothing to install on your o
 5. Press Shift + Return (or Shift + Enter).
 6. 'hello' should appear below the cell.
 
-Then open your preferred AI/LLM interface in another browser tab or window — or use Colab's built-in
+Then open your preferred AI/LLM interface in another browser tab or window, or use Colab's built-in
 AI assistant. See [Using an AI assistant](#using-an-ai-assistant) below.
 
 ### Get the data into your notebook
