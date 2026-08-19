@@ -22,8 +22,8 @@ AI assistant. See [Using an AI assistant](#using-an-ai-assistant) below.
 
 In a new cell, run:
 
-    !git clone https://github.com/a-savoy/hvc-song-response-exercise.git
-    %cd hvc-song-response-exercise
+    !git clone https://github.com/a-savoy/female-hvc-song-response-exercise.git
+    %cd female-hvc-song-response-exercise
 
 That copies this repository into your Colab session and moves you into it, so the paths
 'data/unfamiliar_spikes.csv' and 'data/unfamiliar_song.wav' will work.
