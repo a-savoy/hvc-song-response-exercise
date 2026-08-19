@@ -28,7 +28,7 @@ In a new cell, run:
 That copies this repository into your Colab session and moves you into it, so the paths
 'data/unfamiliar_spikes.csv' and 'data/unfamiliar_song.wav' will work.
 
-Colab already has 'numpy', 'pandas', 'matplotlib', and 'scipy' — no 'pip install' needed.
+Colab already has 'numpy', 'pandas', 'matplotlib', and 'scipy', so no 'pip install' needed.
 
 > Your Colab session is temporary. If it disconnects, or you come back the next day, re-run
 > those two lines before you continue. Anything you want to keep, save to your Drive or download.
@@ -81,6 +81,6 @@ instead of the 'source' line.
 
 ## License
 
-Licensed under **CC BY 4.0** — free to use and adapt with attribution. See ['LICENSE'](LICENSE).
+Licensed under **CC BY 4.0**. Free to use and adapt with attribution. See ['LICENSE'](LICENSE).
 Suggested credit: *Savoy, A. (2026). Female zebra finch HVC single-neuron song-response
 teaching example. CC BY 4.0.*
