@@ -74,8 +74,8 @@ from inside the repository folder:
     pip install -r requirements.txt notebook
     jupyter notebook
 
-The first two lines create and switch into a virtual environment. They matter: on macOS and most
-Linux systems the interpreter is 'python3' rather than 'python', and there is no bare 'pip' command
+The first two lines create and switch into a virtual environment. On macOS and most
+Linux systems, the interpreter is 'python3' rather than 'python', and there is no 'pip' command
 at all until an environment is activated. On Windows, activate with '.venv\Scripts\activate'
 instead of the 'source' line.
 
